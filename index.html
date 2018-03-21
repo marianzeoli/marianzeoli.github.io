@@ -1,19 +1,753 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+	<title>Twingems Design</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- fade -->
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
+  </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- ? -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	<style type="text/css">
-		p, h1{
-			color: purple;
-		}
-		body{
-			background-color: lightpink;
-		}
+
+/*.content {
+  padding: 16px;
+}*/
+body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
+    transition-duration: 4000ms;
+  }
+
+#navbar-brand{
+	font-family: Hypatia Sans Pro;
+	font-size: 17px;
+}
+
+#navbarNav{
+	overflow: hidden;
+  background-color: #811430;
+  width: : 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+
+#navbarNav a{
+	float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Hypatia Sans Pro;
+}
+
+#navbarNav a:hover{
+	background-color: #ddd;
+  color: black;
+}
+
+.active{
+	background-color: black;
+  color: white;
+}
+}
+/*.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}*/
+		
+			/*form{
+	background-color: pink; 
+	padding: 20px;
+	width: 50%;
+	color: white;*/
+	/*display: grid;
+	grid-template-columns: 50% 50%;
+	grid-row-gap: 25px;
+	grid-column-gap: 50px;*/
+	/*float: left;*/
+	font-family: Hypatia Sans Pro;
+  
+}
+
+div.gallery {
+    border: 1px solid #white;
+}
+
+div.gallery:hover {
+   /* border: 1px solid #811430;*/
+    filter: grayscale(100%);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: Hypatia Sans Pro;
+    size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    justify-content: center;
+
+    
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+   
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*#Comments{
+	height: 70px;
+}
+.inputfield{
+	padding: 10px; width: 70%;
+	background-color: lightgray;
+}
+#buttonsubmit{
+	margin: 30px;
+	background-color: #811430;
+	width: 100px;
+	height: 30px;
+    border-radius: 25px;*/
+    /*background-image: url(check.png);*/
+    /*background-size: 25px;
+    background-repeat: no-repeat;
+    color: white;*/
+    /*font-family: Hypatia Sans Pro;*/
+#myImg, #myImg2, #myImg3, #myImg4 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*#myImg:hover {opacity: 0.7;}*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
 	</style>
 </head>
 <body>
-	<h1>This is my heading</h1>
-<p>This is my paragraph</p>
-<p>Paragraph Two</p>
+
+<div id ="Home" class="header"> 
+	<img src="images/banner1.jpg" width="100%"></div>	
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#PortfolioPics">Design Portfolio</a>
+  <a href="#Photography">Photography</a>
+  <a href="#About1">About</a>
+  <a href="#contact">Contact</a>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+<!-- <script type="text/javascript">
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+</script> -->
+<!-- <div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #811430; font-family: Hypatia Sans Pro; size: 32px; color: white;">
+  <a class="navbar-brand" style="padding: 10px;" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav">
+
+    	<li class="nav-item">
+        <!-- <a class="nav-link" href="#Home">Home</a> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#PortfolioPics">Design Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Photography">Photography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About1">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- <div class="row">
+		<div class="column" style="background-color: #811430";> <a id="nav" href="#Home">HOME</a></div>
+		<div class="column" style="background-color: #811430";> <a id="nav1" href ="#Portfolio1">PORTFOLIO</a></div>
+		<div class="column" style="background-color: #811430"> <a id="nav2" href="#About1">ABOUT</a></div>
+		<div class="column" style="background-color: #811430"> <a id="nav3" href="#Contact1">CONTACT</a>
+    </div> -->
+
+
+
+<!-- First Parallax Image with Portfolio -->
+<!-- <div class="bgimg-1 w3-display-container w3-opacity-min" id="home"> -->
+  <!-- <div class="w3-display-middle" style="white-space:nowrap;"> -->
+   
+
+<!-- First Parallax Image with Portfolio Text -->
+<div class="bgimg-1 w3-display-container">
+  <!-- <div class="w3-display-middle"> -->
+   <!--  <span class="w3-xxlarge w3-text-white w3-wide"> --><!-- </span> -->
+  
+  
+
+<!-- Container (Portfolio Section) -->
+
+
+
+<!-- Container (Portfolio Section) -->
+<!-- <div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center"></h3>
+  <p class="w3-center"><em></em></p><br> -->
+
+
+
+<!-- <div class="content1"></div> -->
+<!-- <div id="GraphicDesign"> -->
+	<!-- <h2>Graphic Design</h2> -->
+<!-- </div> -->
+
+  <div id="design01" class="w3-display-middle">
+    <span id="design" class="w3-xxlarge w3-text-white w3-wide" style="font-family: Al Fresco;">Design Portfolio</span>
+  </div></div>
+
+
+<!-- Container (Portfolio Section) -->
+<!-- <div class="w3-content" id="GraphicDesign">
+
+</div> -->
+<div id="PortfolioPics">
+<div id="fade-up" data-aos="fade-up">  
+<div class="responsive">
+  <div class="gallery">
+    <!-- <a target="_blank" href="images/collage.jpg">
+      <img src="images/collage.jpg" alt="collage" width="300" height="200">
+    </a> -->
+    <img id="myImg" src="images/collage.jpg" alt="collage" width="300" height="200">
+    <div class="desc">Collage</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <!-- <a target="_blank" href="images/image2.jpg">
+      <img src="images/image2.jpg" alt="image2" width="600" height="400">
+    </a> -->
+    <img id="myImg2" src="images/image2.jpg" alt="effect" width="300" height="200">
+    <div class="desc">Dispersion Effect</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <!-- <a target="_blank" href="images/image3.jpg">
+      <img src="images/image3.jpg" alt="image3" width="600" height="400">
+    </a> -->
+    <img id="myImg3" src="images/image3.jpg" alt="book cover" width="300" height="200">
+    <div class="desc">Fantasy Book Cover</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <!-- <a target="_blank" href="images/image4.jpg">
+      <img src="images/image4.jpg" alt="image4" width="600" height="400">
+    </a> -->
+    <img id="myImg4" src="images/image4.jpg" alt="space" width="300" height="200">
+    <div class="desc">Space</div>
+  </div>
+</div>
+
+<div class="clearfix"></div></div></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<div id="myModal2" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img02">
+  <div id="caption2"></div>
+</div>
+
+<div id="myModal3" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img03">
+  <div id="caption3"></div>
+</div>
+
+<div id="myModal4" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img04">
+  <div id="caption4"></div>
+</div>
+
+<!-- <div style="padding:6px;"> -->
+  <!-- <p>Graphic Design</p><p>Photography</p> --><!-- </div> -->
+<!-- </div> -->
+
+<!-- <img src="images/collage.jpg" width="100%">  -->
+<!-- Second Parallax Image with About Text -->
+<!-- <div class="bgimg-1 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div> -->
+  
+    <!-- Second Parallax Image with About -->
+    <!-- <div id="About1"> --> <!-- <span class="w3-xxlarge w3-text-white w3-wide"> --><!-- About</div> -->
+<!-- <div id="Photography">
+	<h2>Photography</h2> -->
+
+
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide" style="font-family: Al Fresco;">Photography</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container" style="padding: 20px;" id="Photography">
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/camera01.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/camera02.jpg" alt="Second slide">
+    </div>
+   <!--  <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div> -->
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a></div>
+</div>
+<!-- <div id="PortfolioPics">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/.jpg">
+      <img src="images/.jpg" alt="collage" width="300" height="200">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/.jpg">
+      <img src="images/.jpg" alt="image2" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/.jpg">
+      <img src="images/.jpg" alt="image3" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+ -->
+<!-- <div class="bgimg-2"></div> -->
+  <!-- <div class="w3-display-middle"> -->
+ <!-- <div id="About">
+	<h2>About</h2>
+</div>   -->
+
+<div class="bgimg-1 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide" style="font-family: Al Fresco;">About</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<!-- <div class="w3-content w3-container" id="About">
+
+</div> -->
+<div id="About1" style="background-color: #811430">
+  <p style="color: white; background-color: #811430">Twingems Design uses creativity to bring their clients visions to life. <br> Marian and Connie are twin sisters who have a great passion for the art. They have experience in graphic design, web developement, photography, writing, and film. Below is a list of their skills and what they offer. <br><br>
+
+   Software Proficiency: Adobe Photoshop, Illustrator, Bridge, InDesign Sublime Text, Brackets. 
+
+   <br><br>Coding Proficiency: HTML, CSS, Javascript, jQuery, Bootstrap. 
+<br><br>
+ Services:
+
+<br>Photo Manipulation/ Editing
+<br>Branding/ Logo Design
+<br>Print/ Magazine Layout
+<br>Photography
+<br>Web Development
+<br>SEO Marketing
+</p>
+
+ </div>
+</div>
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min"></div> -->
+<!-- <div id="Contact">
+	<h2>Contact</h2>
+</div> -->
+<!-- Container (Portfolio Section) -->
+
+<!-- Second Parallax Image with About -->
+<!-- <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+   
+  </div> -->
+
+<!-- Second Parallax Image with Portfolio Text -->
+<!-- <div class="bgimg-1 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div> -->
+<!-- <div id="form1"><form action="/action_page.php"> -->
+<!-- <fieldset>
+	<legend>Personal information:</legend>
+	First Name:<br>
+	<input class="inputfield" type="text" name="firstname" value="Your First Name">
+	<br>
+	Last Name:<br>
+	<input class="inputfield" type="text" name="lastname" value="Your Last Name">
+	<br>
+	Email<br>
+	<input class="inputfield" type="text" name="Email" value="Email">
+	<br><br>
+	Comments:<br>
+	<input id="Comments" class="inputfield" type="text" name="Comments" value="Comments">
+	<br><br>
+	Services needed?
+	<br><br>
+	Yes:<input type="radio" name="A">
+	<br><br>
+	No:<input type="radio" name="B">
+	<br><br>
+    <input id="buttonsubmit" type="submit" value="submit">
+
+</fieldset>
+
+<br> -->
+<!-- </form>
+<video width="700" height="600" autoplay controls loop>
+	<source src="media/video1.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+</video></div>
+
+ -->
+
+ <!-- Contact -->
+ <div class="bgimg-3 w3-display-container">
+ <!-- <div class="w3-light-grey w3-padding-large" id="contact"> -->
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide" style="font-family: Al Fresco;">Contact</span>
+  </div></div>
+  <div id ="contact"
+<div class="w3-content w3-container">
+    <p style="color: #811430">Get in touch to talk about your next project.</p>
+
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form><br></div>
+<br><br>
+
+ 
+
+<div class="footer" style="background-color: #811430">
+<a href="#Home" class="w3-button w3-light-grey"><i class= "fa fa-arrow-up w3-margin-right" style="padding: 5px;"></i>Back to top</a>
+<br>
+<br>
+<!-- <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"> -->
+
+  <div class="w3-xlarge w3-section">
+    <a href="http://instagram.com"><i class="fa fa-instagram w3-hover-opacity" style="font-size: 30px; padding: 5px;"></i></a>
+    <a href="http://twitter.com"><i class="fa fa-twitter w3-hover-opacity" style="font-size: 30px; padding: 5px;"></i></a>
+    <a href="http://facebook.com"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 30px; padding: 5px;"></i></a>
+  </div>
+
+<p id="footer"> <img src="images/infinitywhite.png" height="10px"> Copyright &copy; 2018. Twingems Design. All rights reserved.</p>
+<!-- </footer> --></div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+  
+
+    	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += "responsive";
+    } else {
+        x.className = "topnav";
+    }
+// window.onscroll = function() {myFunction()};
+
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+}
+
+AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+// Get the modal
+var modal2 = document.getElementById('myModal2');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg2');
+var modalImg2 = document.getElementById("img02");
+var captionText2 = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+// Get the modal
+var modal3 = document.getElementById('myModal3');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg3');
+var modalImg3 = document.getElementById("img03");
+var captionText3 = document.getElementById("caption3");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+// Get the modal
+var modal4 = document.getElementById('myModal4');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg4');
+var modalImg4 = document.getElementById("img04");
+var captionText4 = document.getElementById("caption4");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+  </body>
+</html>
 </body>
 </html>
