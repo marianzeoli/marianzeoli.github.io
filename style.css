@@ -136,7 +136,8 @@ margin: 0px;
 }
 .desc{
     color:#811430;
-    font-family: Hypatia Sans Pro;
+    /*font-family: Hypatia Sans Pro;*/
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
     size: 14px;
 }
 /* Second image (About) */
@@ -177,6 +178,8 @@ color: white;
 #About1{
   padding: 30px;
   margin: 0px;
+  /*background-image: url('images/butterflybg.jpg');*/
+  
 }
 
 #Contact{
@@ -206,8 +209,9 @@ h2{
     margin: 0px;
 }
 p{
-    font-family: Hypatia Sans Pro;
-    font-size: 14px;
+    /*font-family: Hypatia Sans Pro;*/
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 16px;
     padding: 40px;
     margin: 0px;
     color: white;
@@ -227,7 +231,8 @@ p{
     /*margin-bottom: .3%;*/ color: white
     height: 100px; 
     text-decoration: none;
-    font-family: Hypatia Sans Pro;
+    /*font-family: Hypatia Sans Pro;*/
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
     margin: 0px;
 }
 
@@ -249,7 +254,8 @@ p{
 
 
 .footer{
-font-family: Hypatia Sans Pro;
+/*font-family: Hypatia Sans Pro;*/
+font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 
@@ -288,7 +294,8 @@ a:visited{
     .column {
         width: 100%;
     }
-    
+  
+  
   }
 
 video {
@@ -302,5 +309,6 @@ video {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
+    
  
 }
