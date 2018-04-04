@@ -1,469 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Twingems Design</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
-	 <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<!-- fade -->
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
-  </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-    <!-- ? -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<style type="text/css">
-
-/*.content {
-  padding: 16px;
-}*/
-body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
-    transition-duration: 4000ms;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-  }
-
-#navbar-brand{
-	/*font-family: Hypatia Sans Pro;*/
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-	font-size: 17px;
+<html>
+<title>The Green Foundation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/recyclelogo.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style_green.css">
+<style>
+body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
 }
 
-#navbarNav{
-	overflow: hidden;
-  background-color: #811430;
-  width: : 100%;
-  padding: 10px;
-  text-align: center;
-}
-
-
-#navbarNav a{
-	float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 19px;
-  /*font-family: Hypatia Sans Pro;*/
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-}
-
-#navbarNav a:hover{
-	background-color: #ddd;
-  color: black;
-}
-
-.active{
-	background-color: black;
-  color: white;
-}
-}
-/*.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}*/
-		
-			/*form{
-	background-color: pink; 
-	padding: 20px;
-	width: 50%;
-	color: white;*/
-	/*display: grid;
-	grid-template-columns: 50% 50%;
-	grid-row-gap: 25px;
-	grid-column-gap: 50px;*/
-	/*float: left;*/
-	/*font-family: Hypatia Sans Pro;*/
-
-  
-}
-
-div.gallery {
-    border: 1px solid #white;
-}
-
-div.gallery:hover {
-   /* border: 1px solid #811430;*/
-    filter: grayscale(100%);
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-    color: white;
-    /*font-family: Hypatia Sans Pro;*/
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    size: 14px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-    justify-content: center;
-
-    
-}
-
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-   
-}
-
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
-
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/*#Comments{
-	height: 70px;
-}
-.inputfield{
-	padding: 10px; width: 70%;
-	background-color: lightgray;
-}
-#buttonsubmit{
-	margin: 30px;
-	background-color: #811430;
-	width: 100px;
-	height: 30px;
-    border-radius: 25px;*/
-    /*background-image: url(check.png);*/
-    /*background-size: 25px;
-    background-repeat: no-repeat;
-    color: white;*/
-    /*font-family: Hypatia Sans Pro;*/
-#myImg, #myImg2, #myImg3, #myImg4 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/*#myImg:hover {opacity: 0.7;}*/
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
-
-
-	</style>
-</head>
+</style>
 <body>
 
-<div id ="Home" class="header"> 
-	<img src="images/banner1.jpg" width="100%"></div>	
-<!-- <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#PortfolioPics">Design Portfolio</a>
-  <a href="#Photography">Photography</a>
-  <a href="#About1">About</a>
-  <a href="#contact">Contact</a>
-
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div> -->
-<!-- <script type="text/javascript">
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-</script> -->
-<!-- <div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div> -->
-
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #811430; font-family: Hypatia Sans Pro; size: 32px; color: white;">
-  <a class="navbar-brand" style="padding: 10px;" href="#">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-
-    <ul class="navbar-nav">
-
-    	<li class="nav-item">
-        <!-- <a class="nav-link" href="#Home">Home</a> -->
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#PortfolioPics">Design Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Photography">Photography</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#About1">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
+<!-- Navbar -->
+<div class="w3-top">
+  <div id="NavTop" class="w3-bar w3-green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
+    <a href="#getinvolved" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Get Involved</a>
+    <a href="#news" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">News</a>
+    <a href="#contactus" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
   </div>
-</nav>
-<!-- <div class="row">
-		<div class="column" style="background-color: #811430";> <a id="nav" href="#Home">HOME</a></div>
-		<div class="column" style="background-color: #811430";> <a id="nav1" href ="#Portfolio1">PORTFOLIO</a></div>
-		<div class="column" style="background-color: #811430"> <a id="nav2" href="#About1">ABOUT</a></div>
-		<div class="column" style="background-color: #811430"> <a id="nav3" href="#Contact1">CONTACT</a>
-    </div> -->
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+    <a href="#getinvolved" class="w3-bar-item w3-button w3-padding-large">Get Involved</a>
+    <a href="#news" class="w3-bar-item w3-button w3-padding-large">News</a>
+    <a href="#contactus" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
+  </div>
+
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:100px 0px">
+  <!-- <h1 class="w3-margin w3-jumbo">The Green Foundation</h1> -->
+  <img style="width: 60%;" src="images/header1.jpg">
+  <!-- <p class="w3-xlarge">Template by w3.css</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
+</header>
 
 
+<!-- about -->
+<!-- <div id="about" class="container"> -->
+	<div id="about">
+  <div class="row">
+    <div id="aboutsection1" class="col-sm">
 
-<!-- First Parallax Image with Portfolio -->
-<!-- <div class="bgimg-1 w3-display-container w3-opacity-min" id="home"> -->
-  <!-- <div class="w3-display-middle" style="white-space:nowrap;"> -->
-   
-
-<!-- First Parallax Image with Portfolio Text -->
-<div class="bgimg-1 w3-display-container">
-  <!-- <div class="w3-display-middle"> -->
-   <!--  <span class="w3-xxlarge w3-text-white w3-wide"> --><!-- </span> -->
-  
-  
-
-<!-- Container (Portfolio Section) -->
-
-
-
-<!-- Container (Portfolio Section) -->
-<!-- <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center"></h3>
-  <p class="w3-center"><em></em></p><br> -->
-
-
-
-<!-- <div class="content1"></div> -->
-<!-- <div id="GraphicDesign"> -->
-	<!-- <h2>Graphic Design</h2> -->
-<!-- </div> -->
-
-  <div id="design01" class="w3-display-middle">
-    <!-- <span id="design" class="w3-xxlarge w3-text-white w3-wide" style="font-family: Al Fresco;">Design Portfolio</span> --><img src="images/designtext.png">
+    	<h3>Mission, Vision, History</h3>
+      <p>The Green Foundation was founded in August 2005 and is a non-profit organisation that aims to assist and uplift rural communities with the support of environmental projects. We have raised more than R 4 million to date and have won the Hope Award in 2007 and 2016. To date, we have assisted 45 rural communities in India, USA and Australia and planted more than 30,000 trees.  
+</p>
+    </div>
+    
+    <div id="aboutsection2" class="col-sm">
+    	<h1>About</h1>
+      <img style="width: 100%;" src="images/aboutpic.png">
+    </div>
+    <div id="aboutsection3" class="col-sm">
+      
+      <p>Our staff currently includes two full time project coordinators, a marketing coordinator and five administrative staff members. We also have four part time volunteers during various stages of the year. Our main message is that poverty and environmental degradation are intrinsically linked. By educating communities to respect the environment, opportunities for income generation are created.</p>
+    </div>
   </div></div>
-
-<!-- Container (Portfolio Section) -->
-<!-- <div class="w3-content" id="GraphicDesign">
-
-</div> -->
-<div id="PortfolioPics">
-<div id="fade-up" data-aos="fade-up">  
-<div class="responsive">
-  <div class="gallery">
-    <!-- <a target="_blank" href="images/collage.jpg">
-      <img src="images/collage.jpg" alt="collage" width="300" height="200">
-    </a> -->
-    <img id="myImg" src="images/collage.jpg" alt="collage" width="300" height="200">
-    <div class="desc">Collage</div>
-  </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <!-- <a target="_blank" href="images/image2.jpg">
-      <img src="images/image2.jpg" alt="image2" width="600" height="400">
-    </a> -->
-    <img id="myImg2" src="images/image2.jpg" alt="effect" width="300" height="200">
-    <div class="desc">Dispersion Effect</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <!-- <a target="_blank" href="images/image3.jpg">
-      <img src="images/image3.jpg" alt="image3" width="600" height="400">
-    </a> -->
-    <img id="myImg3" src="images/image3.jpg" alt="book cover" width="300" height="200">
-    <div class="desc">Fantasy Book Cover</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <!-- <a target="_blank" href="images/image4.jpg">
-      <img src="images/image4.jpg" alt="image4" width="600" height="400">
-    </a> -->
-    <img id="myImg4" src="images/image4.jpg" alt="space" width="300" height="200">
-    <div class="desc">Space</div>
-  </div>
-</div>
-
-<div class="clearfix"></div></div></div>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-
-<div id="myModal2" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img02">
-  <div id="caption2"></div>
-</div>
-
-<div id="myModal3" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img03">
-  <div id="caption3"></div>
-</div>
-
-<div id="myModal4" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img04">
-  <div id="caption4"></div>
-</div>
-
-<!-- <div style="padding:6px;"> -->
-  <!-- <p>Graphic Design</p><p>Photography</p> --><!-- </div> -->
 <!-- </div> -->
+<!-- projects -->
+<div id="projects" class="row">
+  <div id="projectssection1" class="col-4"><h1>Projects</h1>
+  	<img style="width: 100%;" src="images/projectspic.png"></div>
+    <div class="row">
+  <div id="projectssection2" class="row">
+    <!-- <a target="_blank" href="images/project1.jpg"></a> -->
+    <div><p class="title">Helping Hands</p>
+  	<div class="col"><img src="images/project1.jpg" alt="" width="300" height="200">
+      </div></div>
+  	<div><p class="title">Save the Planet</p>
+    <!-- <a target="_blank" href="images/project2.jpg"></a> -->
+  	<div class="col"><img src="images/project2.jpg" width="300" height="200"></div></div>
+  	<div><p class="title">Going Green</p>
+    <!-- <a target="_blank" href="images/project5.jpg"></a> -->
+  	<div class="col"><img src="images/project5.jpg" width="300" height="200"></div></div>
+    
+ </div>
+</div>
+<!-- get involved -->
 
-<!-- <img src="images/collage.jpg" width="100%">  -->
-<!-- Second Parallax Image with About Text -->
-<!-- <div class="bgimg-1 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide"></span>
-  </div> -->
-  
-    <!-- Second Parallax Image with About -->
-    <!-- <div id="About1"> --> <!-- <span class="w3-xxlarge w3-text-white w3-wide"> --><!-- About</div> -->
-<!-- <div id="Photography">
-	<h2>Photography</h2> -->
-
-
-<div class="bgimg-2 w3-display-container">
-  <div class="w3-display-middle">
-    <!-- <span class="w3-xxlarge w3-text-white w3-wide" style="font-family: Al Fresco;">Photography</span> --><img src="images/photographytext.png">
+<div id="getinvolved" class="container">
+  <div class="row">
+    <div id="getinvolvedsection1" class="col-sm">
+      <h4>Donate</h4>
+      <img style="width: 100px;" src="images/earthlogo.png">
+    </div>
+    <div id="getinvolvedsection2" class="col-sm">
+    	<h1>Get Involved</h1>
+      <img style="width: 100%;" src="images/getinvolvedpic.png">
+    </div>
+    <div id="getinvolvedsection3" class="col-sm">
+      <h4>Volunteer</h4>
+      <img style="width: 100px;" src="images/people.png">
+    </div>
+  </div>
+<br><br>
+<!-- shop -->
+<h3>Shop</h3>
+<div id="shopsection" class="row">
+	
+  <div class="col-sm"><img class="shirts" src="images/shirtgreen0.jpg" width="200"></div>
+  <div class="col-sm"><img class="shirts" src="images/shirtgreen5.jpg" width="200"></div>
+  <div class="col-sm"><img class="shirts" src="images/shirtgreen2.jpg" width="200"></div>
+  <div class="col-sm"><img class="shirts" src="images/shirtgreen6.jpg" width="200"></div>
+</div>
+<div id="shopsection2" class="row">
+  <div class="col-sm"><img class="shirts" src="images/shirtgreen7.jpg" width="200"></div>
+  <div class="col-sm"><img class="shirts" src="images/shirtgreen1.jpg" width="200"></div>
+  <div class="col-sm"><img class="shirts" src="images/shirtgreen9.jpg" width="200"></div>
+  <div class="col-sm"><img class="shirts" src="images/shirtgreen10.jpg" width="200"></div>
+</div>
+<!-- news -->
+<div id="news" class="container">
+  <div id="newssection1" class="row">
+    <div class="col-sm">
+      <h3>Events Calendar</h3>
+      <ul>
+      	<li>Month/Date/2018/Event</li>
+      	<li>Month/Date/Year/Event</li>
+        <li>Month/Date/2018/Event</li>
+        <li>Month/Date/Year/Event</li>
+        <li>Month/Date/2018/Event</li>
+        <li>Month/Date/Year/Event</li>
+      </ul>
+      
+    </div>
+    <div id="newssection2" class="col-sm">
+      <ul>
+      	<li>Month/Date/2019/Event</li>
+      	<li>Month/Date/Year/Event</li>
+        <li>Month/Date/2018/Event</li>
+        <li>Month/Date/Year/Event</li>
+        <li>Month/Date/2018/Event</li>
+        <li>Month/Date/Year/Event</li>
+      </ul>
+    </div>
+    <div id="newssection3" class="col-sm">
+    	<h1>News</h1>
+     <img style="width: 100%;" src="images/newspic.png">
+    </div>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container" style="padding: 20px;" id="Photography">
+<!-- gallery -->
+<div id="gallery" class="container">
+  <div class="row">
+    <div id="quote1" class="col-sm">
+      <h4>"Think Green, Act Green"</h4>
+    </div>
+   <!--  <div id="gallerysection" class="col-sm"> -->
+      
+      <!-- <img style="width: 100%;" src="images/light.jpg"> -->
+    <!-- </div> -->
+    <!-- Container (Gallery Section) -->
+<div class="w3-content w3-container" style="padding: 20px;" id="Gallery">
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 500px;">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="images/camera01.jpg" alt="First slide">
+
+      <img class="d-block w-100" src="images/team.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/camera02.jpg" alt="Second slide">
+      <img class="d-block w-100" src="images/light.jpg" alt="Second slide">
     </div>
+
    <!--  <div class="carousel-item">
       <img class="d-block w-100" src="..." alt="Third slide">
     </div> -->
@@ -477,285 +197,108 @@ div.desc {
     <span class="sr-only">Next</span>
   </a></div>
 </div>
-<!-- <div id="PortfolioPics">
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/.jpg">
-      <img src="images/.jpg" alt="collage" width="300" height="200">
-    </a>
-    <div class="desc">Add a description of the image here</div>
+    <div id="quote2" class="col-sm">
+      <h4>"As long as you're green, you're growing." - Ray Kroc</h4>
+    </div>
   </div>
 </div>
 
+<!-- contact -->
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/.jpg">
-      <img src="images/.jpg" alt="image2" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/.jpg">
-      <img src="images/.jpg" alt="image3" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
- -->
-<!-- <div class="bgimg-2"></div> -->
-  <!-- <div class="w3-display-middle"> -->
- <!-- <div id="About">
-	<h2>About</h2>
-</div>   -->
-
-<div class="bgimg-1 w3-display-container">
-  <div class="w3-display-middle">
-    <!-- <span class="w3-xxlarge w3-text-white w3-wide" style="font-family: Al Fresco;">About</span> --><img src="images/abouttext.png">
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<!-- <div class="w3-content w3-container" id="About">
-
-</div> -->
-
-<div id="About1" style="background-color: #811430;">
-  <!-- <img src="images/butterflybg.jpg"> -->
-  <p>Twingems Design uses creativity to bring their clients visions to life. <br> Marian and Connie are twin sisters who have a great passion for the art. They have experience in graphic design, web developement, photography, writing, and film. Below is a list of their skills and what they offer. <br><br>
-
-   Software Proficiency: Adobe Photoshop, Illustrator, Bridge, InDesign, Sublime Text, Brackets. 
-
-   <br><br>Coding Proficiency: HTML, CSS, Javascript, jQuery, Bootstrap. 
-<br><br>
- Services:
-
-<br>*Photo Manipulation/ Editing
-<br>*Branding/ Logo Design
-<br>*Print/ Magazine Layout
-<br>*Photography
-<br>*Web Development
-<br>*SEO Marketing
-</p>
-<!-- <img src="images/butterflywhite.png"> -->
- </div>
-</div>
-<!-- <div class="bgimg-3 w3-display-container w3-opacity-min"></div> -->
-<!-- <div id="Contact">
-	<h2>Contact</h2>
-</div> -->
-<!-- Container (Portfolio Section) -->
-
-<!-- Second Parallax Image with About -->
-<!-- <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-   
-  </div> -->
-
-<!-- Second Parallax Image with Portfolio Text -->
-<!-- <div class="bgimg-1 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide"></span>
-  </div> -->
-<!-- <div id="form1"><form action="/action_page.php"> -->
-<!-- <fieldset>
-	<legend>Personal information:</legend>
-	First Name:<br>
-	<input class="inputfield" type="text" name="firstname" value="Your First Name">
-	<br>
-	Last Name:<br>
-	<input class="inputfield" type="text" name="lastname" value="Your Last Name">
-	<br>
-	Email<br>
-	<input class="inputfield" type="text" name="Email" value="Email">
-	<br><br>
-	Comments:<br>
-	<input id="Comments" class="inputfield" type="text" name="Comments" value="Comments">
-	<br><br>
-	Services needed?
-	<br><br>
-	Yes:<input type="radio" name="A">
-	<br><br>
-	No:<input type="radio" name="B">
-	<br><br>
-    <input id="buttonsubmit" type="submit" value="submit">
-
-</fieldset>
-
-<br> -->
-<!-- </form>
-<video width="700" height="600" autoplay controls loop>
-	<source src="media/video1.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-</video></div>
-
- -->
-
- <!-- Contact -->
- <div class="bgimg-3 w3-display-container">
- <!-- <div class="w3-light-grey w3-padding-large" id="contact"> -->
-  <div class="w3-display-middle">
-    <!-- <span class="w3-xxlarge w3-text-white w3-wide" style="font-family: Al Fresco;">Contact</span> --><img src="images/contacttext.png">
-  </div></div>
-  <div id ="contact"
-<div class="w3-content w3-container">
-    <p style="color: #811430">Get in touch to talk about your next project.</p>
-
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" required name="Name">
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" required name="Email">
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" required name="Message">
-      </div>
-      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-    </form><br></div>
-<br><br>
-
- 
-
-<div class="footer" style="background-color: #811430">
-<a href="#Home" class="w3-button w3-light-grey"><i class= "fa fa-arrow-up w3-margin-right" style="padding: 5px;"></i>Back to top</a>
+<div id="contactus" class="container">
+ <!--  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div> -->
+    <div class="col-sm">
+    	<h1>Contact Us</h1>
+      <img style="width: 50%; padding: 10px;" src="images/contactuspic.png">
 <br>
-<br>
-<!-- <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"> -->
-
-  <div class="w3-xlarge w3-section">
+      <img style="width: 100px;" src="images/treehug.png"><br>
+      <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Join Newsletter</button>
+       <div class="w3-xlarge w3-section">
     <a href="http://instagram.com"><i class="fa fa-instagram w3-hover-opacity" style="font-size: 30px; padding: 5px;"></i></a>
     <a href="http://twitter.com"><i class="fa fa-twitter w3-hover-opacity" style="font-size: 30px; padding: 5px;"></i></a>
     <a href="http://facebook.com"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 30px; padding: 5px;"></i></a>
   </div>
+      <br>
+      <a href="#"><img src="images/home.png" style="width: 100px;">
+    </div>
+  <!--   <div class="col-sm">
+      One of three columns
+    </div>
+  </div> -->
+</div>
 
-<p id="footer"> <img src="images/infinitywhite.png" height="10px"> Copyright &copy; 2018. Twingems Design. All rights reserved.</p>
-<!-- </footer> --></div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
-  
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
 
-    	<script>
+      <!-- <h1>About</h1>
+      <h5 class="w3-padding-32">Mission, Vision, History</h5>
+
+      <p class="w3-text-grey">The Green Foundation was founded in August 2005 and is a non-profit organisation that aims to assist and uplift rural communities with the support of environmental projects. We have raised more than R 4 million to date and have won the Hope Award in 2007 and 2016. To date, we have assisted 45 rural communities in India, USA and Australia and planted more than 30,000 trees. For a full outline of our projects per area, please see our project booklet, attached. Our staff currently includes two full time project coordinators, a marketing coordinator and five administrative staff members. We also have four part time volunteers during various stages of the year. Our main message is that poverty and environmental degradation are intrinsically linked. By educating communities to respect the environment, opportunities for income generation are created.
+
+a.The general public. 75% of our funding comes from individuals who hear about our message through our marketing channels. The remainder comes from corporate sponsorship and internal profit generation (such as fundraising activities and sale of our branded merchandise). b. Businesses. Businesses contribute 15% to our funding. We would like to strengthen our focus on corporate sponsorship during 2017 and use the website to support co-branded sponsorship projects like the SASA green campaign. c. Volunteering students. Once a year we run a volunteer program in conjunction with Rand University. Social studies students donate 100 hours of their time to an NGO of their choice as part of their year-end thesis. We typically receive 500 hours donated each year. The website should act as a recruitment drive for these volunteers, as well as other non-student volunteers. d. Media. We have been featured in a variety of local magazines and radio stations. We would like the website to attract further positive media attention.
+
+Purchase our merchandise - eight products-Tshirt, Seeds, Coffee Mugs
+
+Going Green</p>
+    </div> -->
+
+  <!--   <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-grey"></i>
+    </div>
+  </div>
+</div> -->
+
+<!-- Second Grid -->
+<!-- <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-grey w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div> -->
+
+<!-- Footer -->
+<!-- <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer> -->
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += "responsive";
-    } else {
-        x.className = "topnav";
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
     }
-// window.onscroll = function() {myFunction()};
-
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-}
-
-AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
-
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-
-// Get the modal
-var modal2 = document.getElementById('myModal2');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg2');
-var modalImg2 = document.getElementById("img02");
-var captionText2 = document.getElementById("caption2");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-
-// Get the modal
-var modal3 = document.getElementById('myModal3');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg3');
-var modalImg3 = document.getElementById("img03");
-var captionText3 = document.getElementById("caption3");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-
-// Get the modal
-var modal4 = document.getElementById('myModal4');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg4');
-var modalImg4 = document.getElementById("img04");
-var captionText4 = document.getElementById("caption4");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
 }
 </script>
-  </body>
-</html>
+
 </body>
 </html>
